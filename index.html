@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Event Management</title>
+  <style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e0a547;
+    color: #333;
+  }
+  
+  /* Header & Navbar */
+  header {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  header nav ul li {
+    margin: 0 20px;
+  }
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  header nav ul li a:hover {
+    color: #f39c12;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 50px;
+    margin-bottom: 70px;
+  }
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .hero .btn {
+    padding: 15px 30px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .hero .btn:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Registration Form */
+  .register {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .register h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .register input {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .register button {
+    padding: 15px 30px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .register button:hover {
+    background-color: #2ecc71;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to the Future of Event Management</h1>
+      <p>Manage, Register, and Join Events with Ease</p>
+      <a href="#register-form" class="btn">Register Now</a>
+    </div>
+  </section>
+
+  <!-- Event Registration Form -->
+  <section id="register-form" class="register">
+    <h2>Register for the Event</h2>
+    <form action="/submit" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="date" name="eventDate" required>
+      <button type="submit" class="btn">Register</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Event Management System. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
